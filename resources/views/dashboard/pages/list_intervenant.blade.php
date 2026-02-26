@@ -161,15 +161,16 @@
 							<h5 class="mb-0">Intervenants</h5>
 						</div>
 
-						
-
-						<table class="table table-striped text-nowrap table-customers">
+						<table class="table datatable-excel-background">
 							<thead>
 								<tr>
 									<th>Nom & Prénoms</th>
 									<th>Facebook</th>
 									<th>Linkedin</th>
 									<th>Twitter</th>
+									<th>Instagram</th>
+									<th>TikTok</th>
+									
 									<th>
                                         Status
                                     </th>
@@ -185,23 +186,12 @@
                                 @if ($intervenants->isNotEmpty())
                                     @foreach ($intervenants as $intervenant)
                                         <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <a href="user_pages_profile_tabbed.html" class="d-block me-3">
-                                                    <img src="{{ asset('storage/'.$intervenant->photo) }}" width="40" height="40" class="rounded-circle" alt="">
-                                                </a>
-
-                                                <div class="flex-fill">
-                                                    <a href="user_pages_profile_tabbed.html" class="fw-semibold">{{ $intervenant->nom_intervenant }}</a>
-                                                    <div class="fs-sm text-muted">
-                                                       {{$intervenant->fonction}}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td> {{ $intervenant->facebook }}</td>
-                                        <td><a href="#">{{ $intervenant->linkedin }}</a></td>
-                                        <td>{{ $intervenant->twitter }}</td>
+                                        <td>{{ $intervenant->nom_intervenant }}</td>
+                                        <td><a href="{{ $intervenant->facebook }}" target="_blank">{{ $intervenant->facebook }}</a></td>
+                                        <td><a href="{{ $intervenant->linkedin }}" target="_blank">{{ $intervenant->linkedin }}</a></td>
+                                        <td><a href="{{ $intervenant->twitter }}" target="_blank">{{ $intervenant->twitter }}</a></td>
+										<td><a href="{{ $intervenant->instagram }}" target="_blank">{{ $intervenant->instagram }}</a></td>
+										<td><a href="{{ $intervenant->tiktok }}" target="_blank">{{ $intervenant->tiktok }}</a></td>
                                         @if ($intervenant->publie == 1)
                                         <td>
                                             <span class="badge bg-success bg-opacity-10 text-success">Active</span>
@@ -220,12 +210,8 @@
                                                 </a>
 
                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                    <a href="#" class="dropdown-item">
-                                                        <i class="ph-file-pdf me-2"></i>
-                                                        Archiver
-                                                    </a>
-                                                    <a href="#" class="dropdown-item">
-                                                        <i class="ph-truck me-2"></i>
+                                                    <a href="{{ route('intervenants.edit', $intervenant) }}" class="dropdown-item">
+                                                        <i class="ph-pencil me-2"></i>
                                                         Modifier
                                                     </a>
                                                     <a href="#" class="dropdown-item">
@@ -233,12 +219,11 @@
 													@csrf
 													@method('DELETE')
 													
-													<button type="submit" class="btn btn-danger"> <i class="ph-coins me-2"></i>
-														Supprimer
-													</button>
+													<button type="submit" class="btn btn-danger"><i class="ph-trash me-2"></i>Supprimer</button>
 												</form>
 												</a>
-                                                    
+
+                                                    <div class="dropdown-divider"></div>
                                                 </div>
                                             </div>
                                         </td>

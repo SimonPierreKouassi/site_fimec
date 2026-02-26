@@ -19,6 +19,8 @@ export default defineConfig({
                 'resources/js/modernizr.min.js',
                 // bundle principal qui contient jQuery + plugins + custom
                 'resources/js/app.js',
+ 
+
             ],
             refresh: true,
         }),

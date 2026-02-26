@@ -38,7 +38,8 @@ class SponsorController extends Controller
      */
     public function show(Sponsor $sponsor)
     {
-        //
+        $sponsors = Sponsor::all();
+        return view('dashboard.pages.list_sponsors', compact('sponsors'));
     }
 
     /**
@@ -62,6 +63,7 @@ class SponsorController extends Controller
      */
     public function destroy(Sponsor $sponsor)
     {
-        //
+        $sponsor->delete();
+        return redirect()->route('list_sponsors.index')->with('success', 'Sponsor supprimé avec succès.');
     }
 }

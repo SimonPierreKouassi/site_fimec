@@ -49,8 +49,8 @@
                                 <span class="input-group-text"><i class="fa-solid fa-flag-swallowtail"></i></span>
                                 <select class="form-control" name="pays" id="pet-select">
                                 <option value="">Choisissez votre pays</option>
-                                <option value="dog">Côte d'ivoire</option>
-                                <option value="cat">Etranger</option>
+                                <option value="Côte d'ivoire">Côte d'ivoire</option>
+                                <option value="Etranger">Etranger</option>
                                 </select>
                             </div>
                            

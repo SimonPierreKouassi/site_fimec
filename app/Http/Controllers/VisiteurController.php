@@ -63,6 +63,7 @@ class VisiteurController extends Controller
      */
     public function destroy(Visiteur $visiteur)
     {
-        //
+        $visiteur->delete();
+        return redirect()->route('list_visiteurs.index')->with('success', 'Visiteur supprimé avec succès.');    
     }
 }

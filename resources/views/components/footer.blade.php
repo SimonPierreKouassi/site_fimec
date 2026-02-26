@@ -51,12 +51,13 @@
                         <div class="footer-widget-box list">
                             <h4 class="footer-widget-title">Réseaux sociaux</h4>
                             <ul class="footer-list social">
-                                <li><a href="https://www.facebook.com/FIMEC.forum/"><i class="fab fa-facebook"></i> Facebook</a></li>
-                                <li><a href="https://www.tiktok.com/@fimec.forum"><i class="fa-brands fa-tiktok"></i> Tiktok</a></li>
-                                <li><a href="https://www.instagram.com/fimec.forum"><i class="fab fa-instagram"></i> Instagram</a></li>
+                                <li><a href="https://www.facebook.com/AGEFOP"><i class="fab fa-facebook"></i> Facebook</a></li>
+                                <li><a href="https://www.tiktok.com/@agefopci"><i class="fa-brands fa-tiktok"></i> Tiktok</a></li>
+                                <li><a href="https://www.instagram.com/agefopci/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                                <li><a href="https://x.com/AgefopInfo"><i class="fab fa-x-twitter"></i> X (Twitter)</a></li>
                                <!--   <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li> -->
                                <!-- <li><a href="#"><i class="fab fa-whatsapp"></i> Whatsapp</a></li> -->
-                                <li><a href="https://www.linkedin.com/company/fimec-ci/?viewAsMember=true"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
+                                <li><a href="https://www.linkedin.com/company/agefop-agence-nationale-de-la-formation-professionnelle/"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
                             </ul>
                         </div>
                     </div>
@@ -91,9 +92,9 @@
                     </div>
                     <div class="col-md-6 align-self-center">
                         <ul class="footer-menu">
-                            <li><a href="contact.html">Support</a></li>
-                            <li><a href="terms.html">Conditions générales d'utilisation</a></li>
-                            <li><a href="privacy.html">Politique de confidentialité</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Conditions générales d'utilisation</a></li>
+                            <li><a href="#">Politique de confidentialité</a></li>
                         </ul>
                     </div>
                 </div>

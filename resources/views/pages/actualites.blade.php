@@ -42,7 +42,7 @@
                                                 <div class="blog-item-meta">
                                                     <ul>
                                                         <li><a href="#"><i class="far fa-user-circle"></i> By Admin</a></li>
-                                                        <li><a href="#"><i class="far fa-comments"></i> 1.25k Commentaires</a></li>
+                                                        <li><a href="#"><i class="far fa-comments"></i> {{$actualite->commentaires_count ?? 0}} Commentaires</a></li>
                                                     </ul>
                                                 </div>
                                                 <h4 class="blog-title">

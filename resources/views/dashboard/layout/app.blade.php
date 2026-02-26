@@ -10,11 +10,15 @@
 	<link href="{{ Vite::asset('resources/assets_admin/fonts/inter/inter.css') }}" rel="stylesheet" type="text/css"> 
 	<link href="{{ Vite::asset('resources/assets_admin/icons/phosphor/styles.min.css') }}" rel="stylesheet" type="text/css">
 	<link href="{{ Vite::asset('resources/assets_ltr/css/ltr/all.min.css') }}" id="stylesheet" rel="stylesheet" type="text/css">
+	<!-- DataTables CSS -->
+	<link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css">
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
 	<script src="{{ Vite::asset('resources/assets_admin/demo/demo_configurator.js') }}"></script> 
 	<script src="{{ Vite::asset('resources/assets_admin/js/bootstrap/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ Vite::asset('resources/js/jquery-3.7.1.min.js') }}"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
@@ -40,7 +44,11 @@
 	<script src="{{ Vite::asset('resources/assets_admin/js/vendor/editors/ckeditor/ckeditor_classic.js') }}"></script>
 	
 	<script src="{{ Vite::asset('resources/assets_admin/js/vendor/tables/datatables/datatables.min.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.0/pdfmake.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.0/vfs_fonts.min.js"></script>
 	<script src="{{ Vite::asset('resources/assets_admin/js/vendor/tables/datatables/extensions/buttons.min.js') }}"></script>
+	<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
 	
 	<script src="{{ Vite::asset('resources/assets_ltr/js/app.js') }}"></script>
 	<script src="{{ Vite::asset('resources/assets_admin/demo/pages/datatables_extension_buttons_excel.js') }}"></script>
@@ -387,7 +395,7 @@
 				<li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2">
 					<a href="#" class="navbar-nav-link align-items-center rounded-pill p-1" data-bs-toggle="dropdown">
 						<div class="status-indicator-container"> 
-							<img src="{{ Vite::asset('resources/assets_admin/images/demo/users/face11.jpg') }}" class="w-32px h-32px rounded-pill" alt="">
+							<img src="{{ Vite::asset('resources/assets_admin/images/demo/users/face1.jpg') }}" class="w-32px h-32px rounded-pill" alt="">
 							<span class="status-indicator bg-success"></span>
 						</div>
 						<span class="d-none d-lg-inline-block mx-lg-2">Victoria</span>
@@ -403,10 +411,15 @@
 							<i class="ph-gear me-2"></i>
 							Paramètre du compte
 						</a>
-						<a href="#" class="dropdown-item">
-							<i class="ph-sign-out me-2"></i>
-							Déconnexion
+						<a href="{{ route('logout') }}" 
+							class="dropdown-item"
+							onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+								<i class="ph-sign-out me-2"></i>
+								Déconnexion
 						</a>
+						<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+							@csrf
+						</form>
 					</div>
 				</li>
 			</ul>

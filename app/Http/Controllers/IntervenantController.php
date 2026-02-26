@@ -37,6 +37,8 @@ class IntervenantController extends Controller
             'facebook' => 'nullable',
             'linkedin' => 'nullable',
             'twitter' => 'nullable',
+            'instagram' => 'nullable',
+            'tiktok' => 'nullable',
             'publie' => 'required|boolean',
             'categorie' => 'nullable',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // Max 2Mo
@@ -51,6 +53,8 @@ class IntervenantController extends Controller
             'facebook' => $request->input('facebook'),
             'linkedin' => $request->input('linkedin'),
             'twitter' => $request->input('twitter'),
+            'instagram' => $request->input('instagram'),
+            'tiktok' => $request->input('tiktok'),
             'publie' => $request->input('publie'),
             'categorie' => $request->input('categorie'),
             'photo' => $photoPath,
@@ -72,7 +76,7 @@ class IntervenantController extends Controller
      */
     public function edit(Intervenant $intervenant)
     {
-        //
+        return view('dashboard.pages.edit_intervenants', compact('intervenant'));
     }
 
     /**
@@ -80,7 +84,18 @@ class IntervenantController extends Controller
      */
     public function update(Request $request, Intervenant $intervenant)
     {
-        //
+        $intervenant->update([
+            'nom_intervenant' => $request->input('nom_intervenant'),
+            'fonction' => $request->input('fonction'),
+            'facebook' => $request->input('facebook'),
+            'linkedin' => $request->input('linkedin'),
+            'twitter' => $request->input('twitter'),
+            'instagram' => $request->input('instagram'),
+            'tiktok' => $request->input('tiktok'),
+            'publie' => $request->input('publie'),
+            'categorie' => $request->input('categorie'),
+        ]);
+        return redirect()->route('list_intervenants.show')->with('success', 'Intervenant mis à jour avec succès.');
     }
 
     /**

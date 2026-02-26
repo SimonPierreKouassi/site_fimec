@@ -97,7 +97,6 @@ class MediaController extends Controller
     public function destroy(Video $video)
     {
         $video->delete();
-        $photo->delete();
         return redirect()->route('list_medias.index')->with('success', 'Vidéo supprimée avec succès.');
     }
 }

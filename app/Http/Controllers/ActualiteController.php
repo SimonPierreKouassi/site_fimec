@@ -121,7 +121,31 @@ class ActualiteController extends Controller
      */
     public function update(Request $request, Actualite $actualite)
     {
-        //
+        request()->validate([
+            'titre' => 'required|string|max:255',
+            'contenu' => 'required|string',
+            'categorie' => 'nullable|string|max:100',
+            'tags' => 'nullable|string|max:255',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'is_published' => 'required|boolean',
+        ]);
+        $imagePath = $actualite->image;
+        if ($request->hasFile('image')) {
+            // Supprimer l'ancienne image si elle existe
+            if ($actualite->image) {
+                Storage::disk('public')->delete($actualite->image);
+            }
+            $imagePath = $request->file('image')->store('actualites', 'public');
+        }
+        $actualite->update([
+            'titre' => $request->titre,
+            'contenu' => $request->contenu,
+            'categorie' => $request->categorie,
+            'tags' => $request->tags,
+            'image' => $imagePath,
+            'is_published' => (bool) $request->is_published,
+        ]); 
+        return redirect()->route('list_actualites.show')->with('success', 'Actualité mise à jour avec succès.');
     }
 
     /**

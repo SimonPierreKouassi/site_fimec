@@ -68,7 +68,7 @@ class DocumentationController extends Controller
      */
     public function show(Documentation $documentation)
     {
-        //
+        return view('dashboard.pages.edit_documentation', compact('documentation'));
     }
 
     /**
@@ -76,7 +76,7 @@ class DocumentationController extends Controller
      */
     public function edit(Documentation $documentation)
     {
-        //
+        
     }
 
     /**

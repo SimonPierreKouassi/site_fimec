@@ -14,9 +14,9 @@
                                                 href="https://live.themewild.com/cdn-cgi/l/email-protection#3851565e57785d40595548545d165b5755"><i
                                                     class="far fa-envelopes"></i>
                                                 <span class="__cf_email__"
-                                                    data-cfemail="751c1b131a35100d14180519105b161a18">infos@fimec.ci</span></a>
+                                                    data-cfemail="751c1b131a35100d14180519105b161a18">info@fimec.ci</span></a>
                                         </li>
-                                        <li><a href="tel:+21236547898"><i class="far fa-phone-volume"></i> +225 07 15 96 96 96</a>
+                                        <li><a href="tel:+21236547898"><i class="far fa-phone-volume"></i> 1606</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -36,10 +36,11 @@
                                 </div>
                                 <div class="header-top-social">
                                     <span>Suivez nous:</span>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.facebook.com/AGEFOP"><i class="fab fa-facebook"></i></a>
+                                    <a href="https://x.com/AgefopInfo"><i class="fab fa-x-twitter"></i></a>
+                                    <a href="https://www.instagram.com/agefopci/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/agefop-agence-nationale-de-la-formation-professionnelle/"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.tiktok.com/@agefopci"><i class="fa-brands fa-tiktok"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -89,8 +90,8 @@
                         </ul>
                         <div class="nav-right">
                             <div class="search-btn">
-                                <button type="button" class="nav-right-link search-box-outer"><i
-                                        class="far fa-search"></i></button>
+                           <!--      <button type="button" class="nav-right-link search-box-outer"><i
+                                        class="far fa-search"></i></button>-->   
                             </div>
                             <div class="sidebar-btn">
                                 <button type="button" class="nav-right-link"><i class="far fa-bars-sort"></i></button>
@@ -145,10 +146,11 @@
                 </div>
                 <div class="sidebar-social">
                     <h4>Suivez nous</h4>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/AGEFOP"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/AgefopInfo"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/agefopci/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/agefop-agence-nationale-de-la-formation-professionnelle/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.tiktok.com/@agefopci"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
         </div>

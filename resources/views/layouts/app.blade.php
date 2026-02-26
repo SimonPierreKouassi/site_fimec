@@ -27,6 +27,15 @@
         'resources/css/custom.css',
     ])
 </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5BZMNRE88H"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5BZMNRE88H');
+    </script>
 
 <body>
 
@@ -69,6 +78,8 @@
     <script src="{{ Vite::asset('resources/js/wow.min.js') }}"></script>
     <script src="{{ Vite::asset('resources/js/countdown.min.js') }}"></script>
     <script src="{{ Vite::asset('resources/js/main.js') }}"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/01/22/17/20260122170905-WQLH5MPL.js" defer></script>
 </body>
 
 <!-- Mirrored from live.themewild.com/eventu/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Oct 2024 15:16:17 GMT -->

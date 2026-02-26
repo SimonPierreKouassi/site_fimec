@@ -35,10 +35,11 @@ class PresseController extends Controller
 
     /**
      * Display the specified resource.
-     */
+     */ 
     public function show(Presse $presse)
     {
-        //
+        $presses = Presse::all();
+        return view('dashboard.pages.list_presse', compact('presses'));
     }
 
     /**
@@ -62,6 +63,7 @@ class PresseController extends Controller
      */
     public function destroy(Presse $presse)
     {
-        //
+        $presse->delete();
+        return redirect()->route('list_presses.index')->with('success', 'Presse supprimée avec succès.');
     }
 }

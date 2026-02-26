@@ -16,9 +16,9 @@
                             <div class="col-lg-7">
                                 <div class="hero-content">
                                     <div class="hero-date" data-animation="fadeInDown" data-delay=".25s">
-                                        <h1>16/17</h1>
+                                        <h1>14/15</h1>
                                         <div class="date-content">
-                                            <span>Février 2026</span>
+                                            <span>Avril 2026</span>
                                             <p>Sofitel Hotel ivoire, Abidjan, Côte d'Ivoire</p>
                                         </div>
                                     </div>
@@ -26,7 +26,11 @@
                                         Forum Internationale des Métiers et des Compétences
                                     </h1>
                                     <p data-animation="fadeInLeft" data-delay=".75s" style="color:#F39106">
-                                         Les compétences au cœur de la transformation économique en Afrique, à l’ère du numérique et de l’IA : la formation professionnelle comme levier stratégique de transition de l’informel vers le formel.
+                                         COMPÉTENCES, EMPLOI
+                                        ET TRANSFORMATION ÉCONOMIQUE
+                                        EN AFRIQUE À L’ÈRE DU NUMÉRIQUE
+                                        ET DE L’IA :
+                                        Le rôle stratégique de la formation professionnelle
                                     </p>
                                     <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
                                        <!--<a href="#" class="theme-btn">Buy Ticket<i class="fas fa-arrow-right"></i></a>--> 
@@ -44,9 +48,9 @@
                             <div class="col-lg-7">
                                 <div class="hero-content">
                                     <div class="hero-date" data-animation="fadeInDown" data-delay=".25s">
-                                        <h1>16/17</h1>
+                                        <h1>14/15</h1>
                                         <div class="date-content">
-                                            <span>Février 2026</span>
+                                            <span>Avril 2026</span>
                                             <p>Sofitel Hotel ivoire, Abidjan, Côte d'Ivoire</p>
                                         </div>
                                     </div>
@@ -54,7 +58,11 @@
                                         Forum Internationale des Métiers et des Compétences
                                     </h1>
                                     <p data-animation="fadeInLeft" data-delay=".75s" style="color:#F39106">
-                                        Les compétences au cœur de la transformation économique en Afrique, à l’ère du numérique et de l’IA : la formation professionnelle comme levier stratégique de transition de l’informel vers le formel.
+                                        COMPÉTENCES, EMPLOI
+                                        ET TRANSFORMATION ÉCONOMIQUE
+                                        EN AFRIQUE À L’ÈRE DU NUMÉRIQUE
+                                        ET DE L’IA :
+                                        Le rôle stratégique de la formation professionnelle
                                     </p>
                                     <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
                                        <!--<a href="#" class="theme-btn">Buy Ticket<i class="fas fa-arrow-right"></i></a>--> 
@@ -72,9 +80,9 @@
                             <div class="col-lg-7">
                                  <div class="hero-content">
                                     <div class="hero-date" data-animation="fadeInDown" data-delay=".25s">
-                                        <h1>16/17</h1>
+                                        <h1>14/15</h1>
                                         <div class="date-content">
-                                            <span>Février 2026</span>
+                                            <span>Avril 2026</span>
                                             <p>Sofitel Hotel ivoire, Abidjan, Côte d'Ivoire</p>
                                         </div>
                                     </div>
@@ -82,7 +90,11 @@
                                        Forum Internationale des Métiers et des Compétences
                                     </h1>
                                     <p data-animation="fadeInLeft" data-delay=".75s" style="color:#F39106">
-                                         Les compétences au cœur de la transformation économique en Afrique, à l’ère du numérique et de l’IA : la formation professionnelle comme levier stratégique de transition de l’informel vers le formel.
+                                         COMPÉTENCES, EMPLOI
+                                        ET TRANSFORMATION ÉCONOMIQUE
+                                        EN AFRIQUE À L’ÈRE DU NUMÉRIQUE
+                                        ET DE L’IA :
+                                        Le rôle stratégique de la formation professionnelle
                                     </p>
                                     <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
                                        <!--<a href="#" class="theme-btn">Buy Ticket<i class="fas fa-arrow-right"></i></a>--> 
@@ -100,7 +112,7 @@
 
         <div class="event-countdown ec-1">
             <div class="event-countdown-wrap">
-                <div data-countdown="2026/02/15" class="event-countdown"></div>
+                <div data-countdown="2026/04/14" class="event-countdown"></div>
             </div>
             <div class="event-countdown-text">
                 <span>Compteur</span>
@@ -119,7 +131,7 @@
                                 <img class="img-3" src="{{ Vite::asset('resources/img/about/03.jpg') }}" alt>
                             </div>
                             <div class="about-experience" style="background: #01054C;">
-                                <span>1re</span>
+                                <span>2ème</span>
                                 <h5>Édition <br> </h5>
                             </div>
                         </div>
@@ -134,7 +146,7 @@
                                 <div class="site-shadow-text wow fadeInRight" data-wow-delay=".35s">FIMEC</div>
                             </div>
                             <p class="about-text">Le Forum International des Métiers et des Compétences (FIMEC) est la plateforme de référence pour l'innovation professionnelle et le développement des compétences du futur.
-                                Une initiative phare du Ministère de l’Enseignement Technique, de la Formation Professionnelle et de l’Apprentissage (METFPA), portée par l’AGEFOP. Cet événement, prévu les 10 et 11 février 2025 au Palais des Congrès du Sofitel Hôtel Ivoire à Abidjan, se positionne comme une plateforme incontournable pour redéfinir les paradigmes de la formation professionnelle en Côte d’Ivoire et dans la sous-région.
+                                Une initiative phare du Ministère de l’Enseignement Technique, de la Formation Professionnelle et de l’Apprentissage (METFPA), portée par l’AGEFOP. Cet événement, prévu les 14 et 15 Avril 2025 au Palais des Congrès du Sofitel Hôtel Ivoire à Abidjan, se positionne comme une plateforme incontournable pour redéfinir les paradigmes de la formation professionnelle en Côte d’Ivoire et dans la sous-région.
                             </p>
                             
                             <a style="margin-top: 20px;" href="/forum" class="theme-btn">en savoir plus<i class="fas fa-arrow-right"></i></a>
@@ -238,7 +250,7 @@
                     <div class="col-lg-6">
                         <div class="choose-img wow fadeInLeft" data-wow-delay=".25s">
                             <img src="{{ Vite::asset('resources/img/choose/01.jpg') }}" alt>
-                            <a href="#" class="theme-btn">Ministre N'Guessan Koffi </a>
+                            <a href="#" class="theme-btn">Ministre Adama Kamara </a>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -249,9 +261,30 @@
                                 <p>
                                  
                                     
-                                        La vision du Ministre N’Guessan KOFFI, Ministre de l’Enseignement Technique, de la Formation Professionnelle et de l’Apprentissage : « Repenser et revaloriser l’Enseignement Technique, la Formation Professionnelle et l’Apprentissage pour soutenir le développement socioéconomique et contribuer à l’émergence rapide de la Côte d’Ivoire », souligne l’importance de moderniser et d’améliorer le système de formation professionnelle en Côte d’Ivoire, afin de répondre aux besoins du marché et de stimuler la croissance économique du pays.
+                                       La Côte d’Ivoire, à l’instar de nombreuses
+                                        économies africaines, fait face à un défi majeur
+                                        : oﬀrir à sa jeunesse des perspectives d’emplois
+                                        décents et durables, tout en accélérant la
+                                        transformation structurelle de nos secteurs
+                                        productifs. Dans un contexte où l’économie
+                                        informelle demeure prédominante, où la
+                                        digitalisation progresse à grande vitesse et où
+                                        l’intelligence artificielle redessine les métiers,
+                                        l’urgence est claire : bâtir des compétences
+                                        pertinentes, reconnues et directement
+                                        connectées aux besoins réels du marché du
+                                        travail. <br><br>
 
-                                        Le Forum International des Métiers et des Compétences est en phase avec la vision de Monsieur le Ministre de l’Enseignement Technique, de la Formation Professionnelle et de l’Apprentissage. Il sera l’occasion de discuter des problématiques réelles de la formation professionnelle avec tous les acteurs de l’écosystème de la formation professionnelle aussi bien au plan national, qu’international. L’objectif étant, de proposer des solutions concrètes de modernisation et d’amélioration du système de la formation professionnelle en Côte d’Ivoire.
+                                        C’est tout le sens du Forum International des
+                                        Métiers et des Compétences (FIMEC), cadre
+                                        pérenne de concertation et de capitalisation
+                                        porté par l’AGEFOP, qui rassemble acteurs
+                                        publics, secteur privé, institutions de formation,
+                                        collectivités territoriales et partenaires
+                                        techniques et financiers autour d’un objectif
+                                        commun : renforcer l’adéquation
+                                        formation-emploi, professionnaliser les métiers
+                                        et soutenir une croissance inclusive.
                                     
                                 </p>
                             </div>
@@ -370,9 +403,21 @@
                                         </div>
                                         <div class="team-content">
                                             <div class="social">
+                                            @if ($intervenant->facebook)
                                                 <a href="{{ $intervenant->facebook }}"><i class="fab fa-facebook-f"></i></a>
+                                            @endif
+                                            @if ($intervenant->twitter)
                                                 <a href="{{ $intervenant->twitter }}"><i class="fab fa-x-twitter"></i></a>
+                                            @endif    
+                                            @if ($intervenant->linkedin)    
                                                 <a href="{{ $intervenant->linkedin }}"><i class="fab fa-linkedin-in"></i></a>
+                                            @endif
+                                            @if ($intervenant->instagram)
+                                                <a href="{{ $intervenant->instagram }}"><i class="fab fa-instagram"></i></a>
+                                            @endif    
+                                            @if ($intervenant->tiktok)
+                                                <a href="{{ $intervenant->tiktok }}"><i class="fab fa-tiktok"></i></a>
+                                            @endif    
                                             </div>
                                             <div class="info">
                                                 <h4><a href="#">{{ $intervenant->nom_intervenant }}</a></h4>
@@ -392,7 +437,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="cta-content wow fadeInUp" data-wow-delay=".25s">
-                            <h1>Voulez vous participer à notre évènement</h1>
+                            <h1>Voulez-vous participer à notre évènement ?</h1>
                             <p>Amis de la presse, <br>
                                 Journalistes indépendants, Photographes, Caméraman</p>
                             <a href="#" style="background: #01054C;" class="theme-btn">Enregistrez vous ici<i class="fas fa-arrow-right"></i></a>

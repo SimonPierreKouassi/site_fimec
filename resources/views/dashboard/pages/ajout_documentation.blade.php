@@ -267,13 +267,17 @@
 													<i class="ph-file-pdf me-2"></i>
 													Archiver
 												</a>
-												<a href="#" class="dropdown-item">
+												<a href="{{ route('ajout_documentations.show', ['documentation' => $documentation->id]) }}" class="dropdown-item">
 													<i class="ph-truck me-2"></i>
 													Modifier
 												</a>
 												<a href="#" class="dropdown-item">
+												<form action="{{ route('ajout_documentations.destroy', $documentation) }}" method="POST" onsubmit="return confirm('Confirmer la suppression ?');">
+													@csrf
+													@method('DELETE')
 													<i class="ph-coins me-2"></i>
 													Supprimer
+												</form>
 												</a>
 											</div>
 										</div>

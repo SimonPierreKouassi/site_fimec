@@ -17,6 +17,8 @@ class Intervenant extends Model
         'facebook',
         'linkedin',
         'twitter',
+        'instagram',
+        'tiktok',
         'publie',
         'categorie',
         'photo',

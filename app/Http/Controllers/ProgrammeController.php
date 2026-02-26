@@ -52,7 +52,7 @@ class ProgrammeController extends Controller
      */
     public function show(Programme $programme)
     {
-        return view('dashboard.pages.ajout_programme_detail', compact('programme'));
+        return view('dashboard.pages.edit_programme', compact('programme'));
     }
 
     /**
@@ -68,7 +68,11 @@ class ProgrammeController extends Controller
      */
     public function update(Request $request, Programme $programme)
     {
-        //
+        $programme->update([
+            'annee' => $request->input('annee'),
+            'lien_flip' => $request->input('lien_flip'),
+        ]);
+        return redirect()->route('ajout_programmes.index')->with('success', 'Programme mis à jour avec succès.');
     }
 
     /**

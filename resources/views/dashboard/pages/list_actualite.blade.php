@@ -101,16 +101,17 @@
 											</h5>
 
 											<ul class="list-inline list-inline-bullet text-muted mb-3">
-												<li class="list-inline-item">By <a href="#">Eugene</a></li>
+												<li class="list-inline-item">By <a href="#">Admin</a></li>
 												<li class="list-inline-item">{{$actualite->created_at->format('M d, Y')}}</li>
 											</ul>
 
-											How proceed offered her offence shy forming. Returned peculiar pleasant but appetite differed she. Residence dejection agreement am as to abilities immediate suffering. Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he
+											<p>{{ Str::limit($actualite->contenu, 150, '...') }}</p>
 										</div>
-
+										
 										<div class="card-footer d-flex">
 											<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 29</a>
-											<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+											<a href="{{ route('list_actualites.destroy', $actualite) }}" class="d-inline-flex align-items-center ms-auto">Supprimer <i class="ph ph-trash"></i></a>
+											<a href="{{ route('actualites.edit', $actualite) }}" class="d-inline-flex align-items-center ms-auto">Modifier <i class="ph-arrow-circle-right ms-2"></i></a>
 										</div>
 									</div>
 								@endforeach

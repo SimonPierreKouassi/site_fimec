@@ -28,19 +28,24 @@
                                         <div class="blog-meta-left">
                                             <ul>
                                                 <li><i class="far fa-user"></i><a href="#">Admin</a></li>
-                                                <li><i class="far fa-comments"></i>3.2k Commentaires</li>
-                                                <li><i class="far fa-thumbs-up"></i>1.4k Like</li>
+                                                <li><i class="far fa-comments"></i>{{ $actualite->commentaires_count ?? 0 }} Commentaires</li>
+                                                <li><i class="far fa-thumbs-up"></i></li>
                                             </ul>
                                         </div>
                                         <div class="blog-meta-right">
-                                            <a href="#" class="share-link"><i class="far fa-share-alt"></i>Partager </a>
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}" 
+                                            class="share-link" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer">
+                                                <i class="far fa-share-alt"></i> Partager l'article sur facebook
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="blog-details">
                                         <h3 class="blog-details-title mb-20">{{ $actualite->titre }}
                                         </h3>
                                         <p class="mb-10">
-                                            {!! $actualite->contenu !!}
+                                            {!! clean($actualite->contenu) !!}
                                         </p>
                               
                                         <hr>
@@ -197,11 +202,11 @@
                             <div class="widget social-share">
                                 <h5 class="widget-title">Suivez nous</h5>
                                 <div class="social-share-link">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.facebook.com/AGEFOP"><i class="fab fa-facebook"></i></a>
+                                    <a href="https://x.com/AgefopInfo"><i class="fab fa-x-twitter"></i></a>
+                                    <a href="https://www.instagram.com/agefopci/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/agefop-agence-nationale-de-la-formation-professionnelle/"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.tiktok.com/@agefopci"><i class="fa-brands fa-tiktok"></i></a>
                                 </div>
                             </div>
 

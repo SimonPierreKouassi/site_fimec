@@ -38,7 +38,8 @@ class ExposantController extends Controller
      */
     public function show(Exposant $exposant)
     {
-        //
+        $exposants = Exposant::all();
+        return view('dashboard.pages.list_exposant', compact('exposants'));
     }
 
     /**
@@ -62,6 +63,7 @@ class ExposantController extends Controller
      */
     public function destroy(Exposant $exposant)
     {
-        //
+        $exposant->delete();
+        return redirect()->route('list_exposants.index')->with('success', 'Exposant supprimé avec succès.');
     }
 }

@@ -95,10 +95,10 @@
 								<span>Liste des contacts</span>
 							</a>
 							<ul class="nav-group-sub collapse">
-								<li class="nav-item"><a href="{{ route('list_intervenants.show') }}" class="nav-link">Liste des visiteurs</a></li>
-								<li class="nav-item"><a href="{{ route('ajout_intervenants.index') }}" class="nav-link">Liste des exposants</a></li>
-								<li class="nav-item"><a href="{{ route('list_intervenants.show') }}" class="nav-link">Liste de la presse</a></li>
-								<li class="nav-item"><a href="{{ route('list_intervenants.show') }}" class="nav-link">Liste des sponsors</a></li>
+								<li class="nav-item"><a href="{{ route('list_visiteurs.index') }}" class="nav-link">Liste des visiteurs</a></li>
+								<li class="nav-item"><a href="{{ route('list_exposants.index') }}" class="nav-link">Liste des exposants</a></li>
+								<li class="nav-item"><a href="{{ route('list_presses.index') }}" class="nav-link">Liste de la presse</a></li>
+								<li class="nav-item"><a href="{{ route('list_sponsors.index') }}" class="nav-link">Liste des sponsors</a></li>
 							</ul>
 						</li>
 						
