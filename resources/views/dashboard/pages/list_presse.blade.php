@@ -14,8 +14,9 @@
 							The Excel export button saves to an XLSX file and the data can be customised before exporting the file using the customize method of the <code>excelHtml5</code> button type. This example demonstrates how the created file can be customised by giving any cell in the Office column that has a value of 'New York' a blue background.
 						</div>
 
-						<table class="table datatable-excel-background">
-							<thead>
+						<div class="table-responsive" style="max-height: 500px; overflow-y: auto; overflow-x: auto;">
+							<table class="table datatable-excel-background mb-0">
+								<thead>
 								<tr>
 									<th>Nom & Prénoms</th>
 									<th>Email</th>
@@ -75,7 +76,8 @@
                                     
                                 @endif
 							</tbody>
-						</table>
+							</table>
+						</div>
 					</div>
 					<!-- /cell background -->
 @endsection

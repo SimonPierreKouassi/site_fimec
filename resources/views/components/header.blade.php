@@ -132,11 +132,11 @@
                             <a
                                 href="info@fimec.ci"><i
                                     class="far fa-envelope"></i><span class="__cf_email__"
-                                    data-cfemail="info@fimec.ci">info@fimec.ci</span></a>
+                                    data-cfemail="info@fimec.ci">info@agefop.ci</span></a>
                         </li>
                         <li>
                             <h6>Téléphone</h6>
-                            <a href="tel:+21236547898"><i class="far fa-phone"></i>++225 07 15 96 96 96</a>
+                            <a href="tel:+21236547898"><i class="far fa-phone"></i>+225 07 15 96 96 96</a>
                         </li>
                         <li>
                             <h6>Addresse</h6>

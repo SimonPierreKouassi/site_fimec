@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Documentation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\Storage;
+use Illuminate\Support\Facades\Storage;
 
 class DocumentationController extends Controller
 {

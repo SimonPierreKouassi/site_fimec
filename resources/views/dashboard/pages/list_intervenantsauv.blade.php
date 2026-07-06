@@ -1,10 +1,13 @@
 @extends('dashboard.layout.app')
 
-@section('title', 'Ajout de documentation')
+@section('title', 'Ajout d\'intervenants')
 
 @section('content')
-<div class="content-inner">
-			<div class="page-header page-header-light shadow">
+<!-- Inner content -->
+			<div class="content-inner">
+
+				<!-- Page header -->
+				<div class="page-header page-header-light shadow">
 					<div class="page-header-content d-lg-flex">
 						<div class="d-flex">
 							<h4 class="page-title mb-0">
@@ -100,7 +103,7 @@
 						<div class="d-flex">
 							<div class="breadcrumb py-2">
 								<a href="index.html" class="breadcrumb-item"><i class="ph-house"></i></a>
-								<a href="#" class="breadcrumb-item">ECommerce</a>
+								<a href="#" class="breadcrumb-item">Intervenants</a>
 								<span class="breadcrumb-item active">Customers</span>
 							</div>
 
@@ -155,142 +158,86 @@
 					<!-- Customers -->
 					<div class="card">
 						<div class="card-header">
-							<h5 class="mb-0">Ajout de la documentation</h5>
+							<h5 class="mb-0">Intervenants</h5>
 						</div>
 
-						<div class="card-body">
-							<div class="chart-container">
-								 <div class="card-body">
-		                	<div class="card-body border-top">
-
-							<form method="POST" action="{{ Route('ajout_documentations.store') }}"  enctype="multipart/form-data">
-								@csrf
-								<div class="mb-3">
-									<label class="form-label">Nom du document:</label>
-									<input type="text" class="form-control" placeholder="Plaquette FIMEC" name="nom_document">
-								</div>
-
-								<div class="mb-3">
-									<label class="form-label">Année de parution</label>
-									<input type="text" class="form-control" placeholder="2025" name="annee_parution">
-								</div>
-
-								<!--
-								<div class="mb-3">
-									<label class="form-label">Publié:</label>
-									<div>
-										<label class="form-check form-check-inline">
-											<input type="radio" class="form-check-input" name="gender" checked>
-											<span class="form-check-label">Oui</span>
-										</label>
-
-										<label class="form-check form-check-inline">
-											<input type="radio" class="form-check-input" name="gender">
-											<span class="form-check-label">Non</span>
-										</label>
-									</div>
-								</div>
-								-->
-								<div class="mb-3">
-									<label class="form-label">Image de couverture:</label>
-									<input type="file" class="form-control" name="image_couverture">
-									<div class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</div>
-								</div>
-								<div class="mb-3">
-									<label class="form-label">Ajouter le fichier</label>
-									<input type="file" class="form-control" name="fichier">
-									<div class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</div>
-								</div>
-								<div class="text-end">
-									<button type="submit" class="btn btn-primary">Ajouter <i class="ph-paper-plane-tilt ms-2"></i></button>
-								</div>
-							</form>
-
-						</div>
-					    </div>
-							</div>
-						</div>
-
-						<table class="table table-striped text-nowrap table-customers">
+						<table class="table datatable-excel-background">
 							<thead>
 								<tr>
-									<th>Nom du document</th>
-									<th>annee de parution</th>
+									<th>Nom & Prénoms</th>
+									<th>Facebook</th>
+									<th>Linkedin</th>
+									<th>Twitter</th>
+									<th>Instagram</th>
+									<th>TikTok</th>
+									
 									<th>
-										Date d'ajout
-									</th>
-									<th>État</th>
+                                        Status
+                                    </th>
+									<th>Categorie</th>
 									<th>Actions</th>
 									<th></th>
 								</tr>
 							</thead>
-							@php
-								$documentations = $documentations ?? collect();
+                             @php
+								$intervenants = $intervenants ?? collect();
 							@endphp
 							<tbody>
-							@if ($documentations->count() > 0)
-								@foreach ($documentations as $documentation)
-								<tr>
-									<td>
-										<div class="d-flex align-items-center">
-											<a href="user_pages_profile_tabbed.html" class="d-block me-3">
-												<img src="{{ asset('storage/'.$documentation->image_couverture) }}" width="40" height="40" class="rounded-circle" alt="">
-											</a>
+                                @if ($intervenants->isNotEmpty())
+                                    @foreach ($intervenants as $intervenant)
+                                        <tr>
+                                        <td>{{ $intervenant->nom_intervenant }}</td>
+                                        <td><a href="{{ $intervenant->facebook }}" target="_blank">{{ $intervenant->facebook }}</a></td>
+                                        <td><a href="{{ $intervenant->linkedin }}" target="_blank">{{ $intervenant->linkedin }}</a></td>
+                                        <td><a href="{{ $intervenant->twitter }}" target="_blank">{{ $intervenant->twitter }}</a></td>
+										<td><a href="{{ $intervenant->instagram }}" target="_blank">{{ $intervenant->instagram }}</a></td>
+										<td><a href="{{ $intervenant->tiktok }}" target="_blank">{{ $intervenant->tiktok }}</a></td>
+                                        @if ($intervenant->publie == 1)
+                                        <td>
+                                            <span class="badge bg-success bg-opacity-10 text-success">Active</span>
+                                        </td>
+                                        @else
+                                        <td>
+                                            <span class="badge bg-danger bg-opacity-10 text-danger">Inactive</span>
+                                        </td>  
+                                        @endif
+                                        
+                                        <td>{{ $intervenant->categorie }}</td>
+                                        <td class="text-end">
+                                            <div class="dropdown">
+                                                <a href="#" class="text-body" data-bs-toggle="dropdown">
+                                                    <i class="ph-list"></i>
+                                                </a>
 
-											<div class="flex-fill">
-												<a href="user_pages_profile_tabbed.html" class="fw-semibold">{{$documentation->nom_document}}</a>
-												
-											</div>
-										</div>
-									</td>
-									<td>{{$documentation->annee_parution}}</td>
-									<td>{{$documentation->created_at}}</td>
-									<td>
-										<div>
-											<i class="ph-clock fs-base lh-base align-top text-danger me-1"></i>
-											Non publié
-										</div>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a href="{{ route('intervenants.edit', $intervenant) }}" class="dropdown-item">
+                                                        <i class="ph-pencil me-2"></i>
+                                                        Modifier
+                                                    </a>
+                                                    <a href="#" class="dropdown-item">
+													<form action="{{ route('list_intervenants.destroy', $intervenant) }}" method="POST" onsubmit="return confirm('Confirmer la suppression ?');">
+													@csrf
+													@method('DELETE')
+													
+													<button type="submit" class="btn btn-danger"><i class="ph-trash me-2"></i>Supprimer</button>
+												</form>
+												</a>
 
-										<div>
-											<i class="ph-check-circle fs-base lh-base align-top text-success me-1"></i>
-											Publié
-										</div>
-									</td>
-									<td class="text-end">
-										<div class="dropdown">
-											<a href="#" class="text-body" data-bs-toggle="dropdown">
-												<i class="ph-list"></i>
-											</a>
+                                                    <div class="dropdown-divider"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                
+                                    @endforeach
+                                @else
+                                <tr>
+                                    <td colspan="8" class="text-center">Aucun intervenant trouvé.</td>
+                                </tr>
+                                @endif
+								
+			
 
-											<div class="dropdown-menu dropdown-menu-end">
-												<a href="#" class="dropdown-item">
-													<i class="ph-file-pdf me-2"></i>
-													Archiver
-												</a>
-												<a href="{{ route('ajout_documentations.show', ['documentation' => $documentation->id]) }}" class="dropdown-item">
-													<i class="ph-truck me-2"></i>
-													Modifier
-												</a>
-												<a href="#" class="dropdown-item">
-													<form action="{{ route('ajout_documentations.destroy', $documentation) }}" method="POST" onsubmit="return confirm('Confirmer la suppression ?');">
-														@csrf
-														@method('DELETE')
-														<button type="submit" class="btn btn-danger"> <i class="ph-coins me-2"></i>
-															Supprimer
-														</button>
-													</form>
-												</a>
-											</div>
-										</div>
-									</td>
-									<td class="pl-0"></td>
-								</tr>
-								@endforeach
-							@else
-								<tr>
-									<td colspan="6" class="text-center">Aucun doucument disponible.</td>
-								</tr>
-							@endif
 							</tbody>
 						</table>
 					</div>
@@ -335,5 +282,8 @@
 				</div>
 				<!-- /footer -->
 
-			</div>   
+			</div>
+			<!-- /inner content -->
+
+			
 @endsection

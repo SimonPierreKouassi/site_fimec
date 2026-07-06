@@ -16,14 +16,14 @@
                             <div class="col-lg-7">
                                 <div class="hero-content">
                                     <div class="hero-date" data-animation="fadeInDown" data-delay=".25s">
-                                        <h1>14/15</h1>
+                                        <h1>15/16</h1>
                                         <div class="date-content">
-                                            <span>Avril 2026</span>
+                                            <span>Juillet 2026</span>
                                             <p>Sofitel Hotel ivoire, Abidjan, Côte d'Ivoire</p>
                                         </div>
                                     </div>
                                     <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
-                                        Forum Internationale des Métiers et des Compétences
+                                        Forum International des Métiers et des Compétences
                                     </h1>
                                     <p data-animation="fadeInLeft" data-delay=".75s" style="color:#F39106">
                                          COMPÉTENCES, EMPLOI
@@ -48,14 +48,14 @@
                             <div class="col-lg-7">
                                 <div class="hero-content">
                                     <div class="hero-date" data-animation="fadeInDown" data-delay=".25s">
-                                        <h1>14/15</h1>
+                                        <h1>15/16</h1>
                                         <div class="date-content">
-                                            <span>Avril 2026</span>
+                                            <span>Juillet 2026</span>
                                             <p>Sofitel Hotel ivoire, Abidjan, Côte d'Ivoire</p>
                                         </div>
                                     </div>
                                     <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
-                                        Forum Internationale des Métiers et des Compétences
+                                        Forum International des Métiers et des Compétences
                                     </h1>
                                     <p data-animation="fadeInLeft" data-delay=".75s" style="color:#F39106">
                                         COMPÉTENCES, EMPLOI
@@ -80,14 +80,14 @@
                             <div class="col-lg-7">
                                  <div class="hero-content">
                                     <div class="hero-date" data-animation="fadeInDown" data-delay=".25s">
-                                        <h1>14/15</h1>
+                                        <h1>15/16</h1>
                                         <div class="date-content">
-                                            <span>Avril 2026</span>
+                                            <span>Juillet 2026</span>
                                             <p>Sofitel Hotel ivoire, Abidjan, Côte d'Ivoire</p>
                                         </div>
                                     </div>
                                     <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
-                                       Forum Internationale des Métiers et des Compétences
+                                       Forum International des Métiers et des Compétences
                                     </h1>
                                     <p data-animation="fadeInLeft" data-delay=".75s" style="color:#F39106">
                                          COMPÉTENCES, EMPLOI
@@ -112,7 +112,7 @@
 
         <div class="event-countdown ec-1">
             <div class="event-countdown-wrap">
-                <div data-countdown="2026/04/14" class="event-countdown"></div>
+                <div data-countdown="2026/07/15" class="event-countdown"></div>
             </div>
             <div class="event-countdown-text">
                 <span>Compteur</span>
@@ -146,7 +146,7 @@
                                 <div class="site-shadow-text wow fadeInRight" data-wow-delay=".35s">FIMEC</div>
                             </div>
                             <p class="about-text">Le Forum International des Métiers et des Compétences (FIMEC) est la plateforme de référence pour l'innovation professionnelle et le développement des compétences du futur.
-                                Une initiative phare du Ministère de l’Enseignement Technique, de la Formation Professionnelle et de l’Apprentissage (METFPA), portée par l’AGEFOP. Cet événement, prévu les 14 et 15 Avril 2025 au Palais des Congrès du Sofitel Hôtel Ivoire à Abidjan, se positionne comme une plateforme incontournable pour redéfinir les paradigmes de la formation professionnelle en Côte d’Ivoire et dans la sous-région.
+                                Une initiative phare du Ministère de l’Enseignement Technique, de la Formation Professionnelle et de l’Apprentissage (METFPA), portée par l’AGEFOP. Cet événement, prévu les 15 et 16 Juillet 2025 au Palais des Congrès du Sofitel Hôtel Ivoire à Abidjan, se positionne comme une plateforme incontournable pour redéfinir les paradigmes de la formation professionnelle en Côte d’Ivoire et dans la sous-région.
                             </p>
                             
                             <a style="margin-top: 20px;" href="/forum" class="theme-btn">en savoir plus<i class="fas fa-arrow-right"></i></a>
