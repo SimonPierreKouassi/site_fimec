@@ -7,7 +7,7 @@
             <div class="container">
                 <h2 class="breadcrumb-title">Accréditation</h2>
                 <ul class="breadcrumb-menu">
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="/">Accueil</a></li>
                     <li class="active">accréditation</li>
                 </ul>
             </div>

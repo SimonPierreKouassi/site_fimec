@@ -7,7 +7,7 @@
 							<i class="ph-dots-three sidebar-resize-show"></i>
 						</li>
 						<li class="nav-item">
-							<a href="index.html" class="nav-link">
+							<a href="/dashboard" class="nav-link">
 								<i class="ph-house"></i>
 								<span>
 									Tableau de bord

@@ -103,7 +103,7 @@
 					<div class="page-header-content d-lg-flex border-top">
 						<div class="d-flex">
 							<div class="breadcrumb py-2">
-								<a href="index.html" class="breadcrumb-item"><i class="ph-house"></i></a>
+								<a href="/dashboard" class="breadcrumb-item"><i class="ph-house"></i></a>
 								<a href="#" class="breadcrumb-item">Blog</a>
 								<span class="breadcrumb-item active">Grid</span>
 							</div>
