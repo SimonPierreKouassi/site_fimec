@@ -1,0 +1,17 @@
+.git
+.gitignore
+.github
+node_modules
+vendor
+public/build
+storage/app/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/logs/*
+bootstrap/cache/*
+.env
+.env.*
+*.log
+Dockerfile*
+README.md
